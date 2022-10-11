@@ -7,7 +7,7 @@ Identidade Visual · Granulados
 Paleta de Cores
    Vinho   #532524 
    Dourado #c4933f
-   Bege    #eo0d5bb
+   Bege    #e0d5bb
 
 -------------------------------
 
@@ -18,13 +18,103 @@ Fontes
 
 */
 
+/* Variaveis Color.Font */
+:root {
+    --cor0: #532524;
+    --cor1: #c4933f;
+    --cor2: #e0d5bb;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+    --font-principal: 'dystopian', sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    font-family: dystopian, sans-serif;
-    font-style: normal;
-    font-weight: 300;
+body, html {
+    min-height: 100%;
+    background-color: var(--cor2);
+    font-family: var(--font-principal);
+}
+
+header {
+    background-color: var(--cor0);
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+header > h1 {
+    padding-top: 50px;
+    color: var(--cor2);
+}
+
+header img#logotipo {
+    max-width:2px;
+    max-height:10px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+section {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    line-height: 2em;
+}
+
+section > h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+section.secmenu {
+
+}
+
+section.banner {
+
+}
+
+section.secevent {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.secevent > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.118);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#event {
+    background-image: url('../imagens/banner01.jpeg');
+}
+
+section.seccontact {
+
+}
+
+section.seclocal {
+    background-color: var(--cor1);
+}
+
+footer {
+    background-color: #f0e8d6;
+    height: 300px;
+}
+
+footer p {
+    font-family: var(--font-principal);
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 260px;
+    color: var(--cor0);
 }
