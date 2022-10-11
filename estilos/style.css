@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*
+
+Identidade Visual · Granulados
+
+Paleta de Cores
+   Vinho   #532524 
+   Dourado #c4933f
+   Bege    #eo0d5bb
+
+-------------------------------
+
+Fontes
+    font-family: dystopian, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: dystopian, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
