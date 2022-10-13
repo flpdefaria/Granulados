@@ -101,7 +101,7 @@ menu > ul > li > a {
     background-color: var(--cor2);
     color: var(--cor0);
     text-decoration: none;
-    font-family: var(--fonte-briga);
+    font-family: var(--font-principal);
     font-size: 0.8em;
     padding: 20px 30px 8px;
 }
@@ -129,29 +129,83 @@ div#textbanner {
     display: inline-block;
     background-color: var(--cor2);
     color: var(--cor0);
-    font-family: var(--fonte-briga);
+    font-family: var(--font-principal);
     font-size: 1.5em;
-    margin-left: 50px;
+    margin-left: 30px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);   
 }
 
 div#textbanner > p {
     padding: 10px;
-    text-align: center;   
+    text-align: left;   
 }
 
-/*
+section#event {
+    background-color: var(--cor1);
+}
+
+section#event > h2 {
+    padding: 30px;
+    font-family: var(--font-principal);
+    color: var(--cor0);
+    text-align: center;
+}
+
+section#event > p {
+    text-align: justify;
+    padding: 0px 30px 30px 30px;
+    font-family: var(--font-principal);
+    color: var(--cor2);
+}
+
+div#imgevent {
+    background: url('../imagens/img05.jpeg') left;
+    height: 50vh;
+
+}
+
+section#contact > h2 {
+    font-family: var(--font-principal);
+    color: var(--cor0);
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+}
+
+section#contact > p {
+    font-family: var(--font-principal);
+    color: var(--cor2);
+    text-align: center;
+}
+
+section#location > h2 {
+    font-family: var(--font-principal);
+    color: var(--cor0);
+    background-color: var(--cor2);
+    padding: 30px 30px 30px 30px;
+}
+
+div#toprodape {
+    background-color:#391d1c;
+    height: 30px;
+    margin-top: -4px;
+}
 
 footer {
-    background-color: #f0e8d6;
-    height: 300px;
+    background-color: var(--cor0);
+    height: 150px;
 }
 
 footer p {
     font-family: var(--font-principal);
-    font-size: 0.8em;
+    font-size: 0.5em;
     text-align: center;
-    padding-top: 260px;
-    color: var(--cor0);
+    color: #391d1c;
 }
-*/
+
+p#logorodape {
+    font-family: var(--fonte-granulados);
+    color: #391d1c;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
