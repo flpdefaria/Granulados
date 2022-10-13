@@ -48,9 +48,9 @@ Fontes
         font-family: var(--font-principal);
         display: block;
         background-color: var(--cor1);
-        padding: 30px;
-        margin-top: 30px;
-        margin-bottom: -22px;
+        padding: 20px;
+        margin-top: 26px;
+        margin-bottom: -2px;
     }
 
     menu > ul > li {
@@ -61,5 +61,5 @@ Fontes
     main {
         width: 768px;
     }
-    
+
 }

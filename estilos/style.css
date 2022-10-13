@@ -18,6 +18,13 @@ Fontes
 
 */
 
+@font-face {
+    font-family: 'Caligna'; /* Cria um nome para a sua fonte que add ao arquivo e utiliza esse nome dentro da font-family. Ex. no h2 e p */
+    src: url('../font/CalignaDEMO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Variaveis Color.Font */
 :root {
     --cor0: #532524;
@@ -26,7 +33,7 @@ Fontes
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
+    --fonte-granulados: 'Caligna', cursive;
     --font-principal: 'dystopian', sans-serif;
 }
 
@@ -44,7 +51,20 @@ body, html {
 header {
     text-align: center;
     padding-top: 5vh;
-    padding-bottom: 2vh;
+    padding-bottom: 0px;
+}
+
+#logotipo {
+    font-family: var(--fonte-granulados);
+    color: var(--cor0);
+    font-size: 2.5em;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logobrig {
+    color: var(--cor0);
+    font-size: 0.5em;
 }
 
 i#iconmenu {
@@ -126,7 +146,7 @@ section.secmenu > p {
 }
 
 section#banner {
-    background-image: url('../imagens/img001.png');
+    background-image: url('../imagens/banner02.jpg');
 }
 
 section.seclocal {
