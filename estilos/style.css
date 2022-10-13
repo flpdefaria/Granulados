@@ -75,7 +75,7 @@ p#logobrig {
 
 i#iconmenu {
     color: var(--cor0);
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 30px;
     display: block;
@@ -118,19 +118,23 @@ section#banner {
     padding-top: 20vh;
     padding-bottom: 20vh;
     line-height: 2em;
-    background: url('../imagens/banner02.jpg') no-repeat top right;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
+    background: url('../imagens/img04.jpeg') no-repeat top right;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+div#textbanner {
+    display: inline-block;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    font-family: var(--fonte-briga);
+    font-size: 1.5em;
+
 }
 
 /*
-
-section.secmenu {
-    padding-top: 35vh;
-    padding-bottom: 35vh;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 section.secmenu > p {
     display: inline-block;
