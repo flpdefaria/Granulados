@@ -14,12 +14,12 @@
     <header>
         <img src="imagens/logotipogr.png" class="logotipo" alt="Granulados">
         <i id="iconmenu" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="#">NOSSO MENU</a></li>
-                <li><a href="#">EVENTOS</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">LOCALIZAÇÃO</a></li>
+                <li><a href="#event">EVENTOS</a></li>
+                <li><a href="#contact">CONTATO</a></li>
+                <li><a href="#local">LOCALIZAÇÃO</a></li>
             </ul>
         </menu>
     </header>
@@ -46,15 +46,16 @@
 
     <footer>
         <hr>
-       <p><strong> &copy; GRANULADOS BRIGADEIROS GOURMET</strong> · Todos os direitos reservados.
+       <p><strong> &copy; GRANULADOS BRIGADEIROS GOURMET 2019 - 2022</strong> · Todos os direitos reservados.
     </p> 
     </footer>
+    
     <script>
         function mobile() {
             if (window.innerWidth >= 768) {
-                itens.style.display = 'none' 
+                itens.style.display = 'block' 
             } else {
-                itens.style.display = 'block'
+                itens.style.display = 'none'
             }
         }
         function clickMenu() {

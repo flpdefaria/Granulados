@@ -84,6 +84,13 @@ menu > ul > li > a:hover {
     color: var(--cor2);
 }
 
+menu#itens > ul > li > a {
+    display: block;
+    padding-left: 32px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
 section {
     padding-top: 20vh;
     padding-bottom: 20vh;
@@ -93,14 +100,6 @@ section {
 section > h2 {
     text-align: center;
     padding: 15px;
-}
-
-section.secmenu {
-
-}
-
-section.banner {
-
 }
 
 .logotipo {
@@ -124,15 +123,10 @@ section.secmenu > p {
     color: var(--cor0);
     margin-left: 50px;
     box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);
-
 }
 
 section#banner {
     background-image: url('../imagens/img001.png');
-}
-
-section.seccontact {
-
 }
 
 section.seclocal {
