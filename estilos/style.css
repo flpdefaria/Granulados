@@ -131,29 +131,16 @@ div#textbanner {
     color: var(--cor0);
     font-family: var(--fonte-briga);
     font-size: 1.5em;
+    margin-left: 50px;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);   
+}
 
+div#textbanner > p {
+    padding: 10px;
+    text-align: center;   
 }
 
 /*
-
-section.secmenu > p {
-    display: inline-block;
-    font-size: 50px;
-    line-height: 1;
-    padding: 30px;
-    background-color: var(--cor2);
-    color: var(--cor0);
-    margin-left: 50px;
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);
-}
-
-section#banner {
-    background-image: url('../imagens/banner02.jpg');
-}
-
-section.seclocal {
-    background-color: var(--cor1);
-}
 
 footer {
     background-color: #f0e8d6;
