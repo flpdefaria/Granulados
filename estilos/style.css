@@ -42,24 +42,46 @@ body, html {
 }
 
 header {
-    background-color: var(--cor0);
     text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
 }
 
-header > h1 {
-    padding-top: 50px;
+i#iconmenu {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    display: block;
+    text-align: left;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: -22px;
+    cursor: pointer;
+}
+
+i#iconmenu:hover {
+    background-color: var(--cor1);
     color: var(--cor2);
 }
 
-header img#logotipo {
-    max-width:2px;
-    max-height:10px;
-    width: auto;
-    height: auto;
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
     display: block;
-    margin: auto;
+    padding: 5px;
+    text-decoration: 2px var(--cor0);
+    text-align: center;
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
+
+menu > ul > li > a:hover {
+    color: var(--cor2);
 }
 
 section {
@@ -81,21 +103,32 @@ section.banner {
 
 }
 
-section.secevent {
+.logotipo {
+    margin: 0px;
+}
+
+section.secmenu {
+    padding-top: 35vh;
+    padding-bottom: 35vh;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
     background-size: cover;
     background-attachment: fixed;
 }
 
-section.secevent > p {
+section.secmenu > p {
     display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.118);
-    text-shadow: 1px 1px 0px black;
+    font-size: 50px;
+    line-height: 1;
+    padding: 30px;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    margin-left: 50px;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);
+
 }
 
-section#event {
-    background-image: url('../imagens/banner01.jpeg');
+section#banner {
+    background-image: url('../imagens/img001.png');
 }
 
 section.seccontact {

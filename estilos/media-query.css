@@ -25,12 +25,37 @@ Fontes
     font-weight: 300;
 */
 
+/* Variaveis Color.Font */
+:root {
+    --cor0: #532524;
+    --cor1: #c4933f;
+    --cor2: #e0d5bb;
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: dystopian, sans-serif;
-    font-style: normal;
-    font-weight: 300;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+    --font-principal: 'dystopian', sans-serif;
 }
 
+
+@media screen and (min-width: 768px) {
+    i#iconmenu {
+        display: none;
+    }
+    menu {
+        display: block;
+        background-color: var(--cor1);
+        padding: 30px;
+        margin-top: 30px;
+        margin-bottom: -22px;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        color: var(--cor0);
+    }
+
+    main {
+        width: 768px;
+    }
+}
