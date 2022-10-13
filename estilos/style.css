@@ -2,6 +2,8 @@
 
 /*
 
+Versão
+
 Identidade Visual · Granulados
 
 Paleta de Cores
@@ -32,9 +34,9 @@ Fontes
     --cor2: #e0d5bb;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-briga: seravek-web, sans-serif;
     --fonte-granulados: 'Caligna', cursive;
-    --font-principal: 'dystopian', sans-serif;
+    --font-principal: dystopian, sans-serif;
 }
 
 * {
@@ -44,43 +46,44 @@ Fontes
 
 body, html {
     min-height: 100%;
-    background-color: var(--cor2);
-    font-family: var(--font-principal);
+    background-color: var(--cor0);
 }
 
 header {
-    text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 0px;
+    background-color: var(--cor2);
+    padding-bottom: 15px;
 }
 
-#logotipo {
+div#topologo {
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+p#logogran {
     font-family: var(--fonte-granulados);
     color: var(--cor0);
-    font-size: 2.5em;
-    padding: 0px;
-    margin: 0px;
+    font-size: 2em;
 }
 
-#logobrig {
+p#logobrig {
+    font-family: var(--fonte-briga);
     color: var(--cor0);
-    font-size: 0.5em;
+    font-size: 0.3em;
 }
 
 i#iconmenu {
-    background-color: var(--cor1);
     color: var(--cor0);
+    position: fixed;
+    top: 20px;
+    right: 30px;
     display: block;
-    text-align: left;
-    padding: 30px;
-    margin-top: 30px;
-    margin-bottom: -22px;
     cursor: pointer;
 }
 
 i#iconmenu:hover {
-    background-color: var(--cor1);
-    color: var(--cor2);
+    color: var(--cor1);
 }
 
 menu {
@@ -89,42 +92,37 @@ menu {
 
 menu > ul {
     list-style-type: none;
+    border-top: 1px solid var(--cor0);
+    margin-top: 16px;
 }
 
 menu > ul > li > a {
     display: block;
-    padding: 5px;
-    text-decoration: 2px var(--cor0);
-    text-align: center;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     color: var(--cor0);
+    text-decoration: none;
+    font-family: var(--fonte-briga);
+    font-size: 0.8em;
+    padding: 20px 30px 8px;
 }
 
 menu > ul > li > a:hover {
-    color: var(--cor2);
+    color: var(--cor1);
 }
 
-menu#itens > ul > li > a {
-    display: block;
-    padding-left: 32px;
-    padding-bottom: 10px;
-    text-align: left;
+main {
+    margin: auto;
 }
 
-section {
+section#banner {
     padding-top: 20vh;
     padding-bottom: 20vh;
     line-height: 2em;
+    background: url('../imagens/banner02.jpg') no-repeat top right;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
 }
 
-section > h2 {
-    text-align: center;
-    padding: 15px;
-}
-
-.logotipo {
-    margin: 0px;
-}
+/*
 
 section.secmenu {
     padding-top: 35vh;
@@ -165,3 +163,4 @@ footer p {
     padding-top: 260px;
     color: var(--cor0);
 }
+*/

@@ -12,9 +12,10 @@
 </head>
 <body onresize="mobile()">
     <header>
-        <!--<img src="imagens/logotipogr.png" class="logotipo" alt="Granulados">-->
-        <p id="logotipo">Granulados</p>
-        <p id="logobrig">BRIGADEIROS GOURMET</p>
+        <div id="topologo">
+            <p id="logogran">Granulados</p>
+            <p id="logobrig">BRIGADEIROS GOURMET</p>
+        </div>
         <i id="iconmenu" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
         <menu id="itens">
             <ul>
@@ -25,14 +26,16 @@
             </ul>
         </menu>
     </header>
+    <main>
+        <section id="banner">
+            <p>
+                OS MELHORES BRIGADEIROS <br> 
+                GOURMET PARA O SEU EVENTO!
+            </p>
+        </section>
+    </main>
 
-    <section class="secmenu" id="banner">
-        <p>
-            OS MELHORES BRIGADEIROS <br> 
-            GOURMET PARA O SEU EVENTO!
-        </p>
-    </section>
-
+ <!--
     <section class="secevent" id="event">
         <p>EVENTOS</p>
     </section>
@@ -51,7 +54,7 @@
        <p><strong> &copy; GRANULADOS BRIGADEIROS GOURMET 2019 - 2022</strong> · Todos os direitos reservados.
     </p> 
     </footer>
-
+-->
     <script>
         function mobile() {
             if (window.innerWidth >= 768) {
@@ -67,6 +70,6 @@
                 itens.style.display = 'block'
             }
         }
-    </script>
+    </script> 
 </body>
 </html>
