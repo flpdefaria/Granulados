@@ -161,21 +161,49 @@ section#event > p {
 div#imgevent {
     background: url('../imagens/img05.jpeg') left;
     height: 50vh;
+}
 
+section#contact {
+    background-color: var(--cor2);
 }
 
 section#contact > h2 {
     font-family: var(--font-principal);
     color: var(--cor0);
-    background-color: var(--cor2);
     text-align: center;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 30px 12px 30px;
 }
 
 section#contact > p {
     font-family: var(--font-principal);
-    color: var(--cor2);
+    color: var(--cor0);
     text-align: center;
+    padding-bottom: 30px;
+}
+
+a#whastapp {
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+a#whastapp:hover {
+    color: var(--cor1);
+}
+
+div#form{
+    background-color: var(--cor0);
+    height: auto;
+    width: 70vw;
+    padding: 15px;
+    display: block;
+    text-align: right;
+    left: 0px;
+    position: relative;
+    border-radius: 0px 15x 15px 0px;
+}
+
+section#localtion {
+    position: relative;
 }
 
 section#location > h2 {
