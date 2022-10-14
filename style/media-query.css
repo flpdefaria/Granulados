@@ -4,6 +4,7 @@
 
 Typical Device Breakpoints
 -------------------------------
+
 · Pequenas Telas: até 600px
 · Celular: de 600px até 768px
 · Tablet: 768px até 992px
@@ -12,20 +13,21 @@ Typical Device Breakpoints
 
 -------------------------------
 
-Paleta de Cores
-   Vinho   #532524 
-   Dourado #c4933f
-   Bege    #e0d5bb
+Color Palette
+   --cor0:  #532524 
+   --cor1:  #c4933f
+   --cor2:  #e0d5bb
 
 -------------------------------
 
-Fontes
+Font
     font-family: dystopian, sans-serif;
     font-style: normal;
     font-weight: 300;
-*/
 
-/* Variaveis Color.Font */
+
+   Creating variable for color.font */
+
 :root {
     --cor0: #532524;
     --cor1: #c4933f;
@@ -37,7 +39,8 @@ Fontes
     --font-principal: 'dystopian', sans-serif;
 }
 
-/* TABLET */
+/* Configuration for Tablet and Big Screens */
+
 @media screen and (min-width: 768px) {
     
     body {
@@ -109,16 +112,42 @@ Fontes
     div#textbanner > p {
         font-size: 2em;
         line-height: 6vh;
-
     }
-
     main {
         width: 100vw;
     }
+
+    section#event {
+        border: 1px solid black;
+    }
+
+    section#event > h2 {
+        border: 1px solid black;
+    }
+
     section#event > p {
         width: auto;
         text-align: center;
         border: 1px solid black;
     }
 
+    div.eventdiv {
+        display: inline-block;
+        width: 70vh;
+        margin: auto;
+    }    
+    
+    div#ptext > p {
+        border: 1px solid black;
+        text-align: justify;
+        padding: 0px 30px 30px 30px;
+        font-family: var(--font-principal);
+        color: var(--cor2);
+        margin: auto;
+    }
+
+    div#imgevent {
+        border: 1px solid black;
+        margin-left: 30vh;
+    }
 }

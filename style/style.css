@@ -2,18 +2,19 @@
 
 /*
 
-Versão
+Version
 
-Identidade Visual · Granulados
+Visual Identity· Granulados
 
-Paleta de Cores
-   Vinho   #532524 
-   Dourado #c4933f
-   Bege    #e0d5bb
+Color Palette
+
+   --cor0: #532524 
+   --cor1: #c4933f
+   --cor2: #e0d5bb
 
 -------------------------------
 
-Fontes
+Font
     font-family: dystopian, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -27,7 +28,8 @@ Fontes
     font-style: normal;
 }
 
-/* Variaveis Color.Font */
+/* Creating variable for color.font */
+
 :root {
     --cor0: #532524;
     --cor1: #c4933f;
@@ -49,6 +51,8 @@ body, html {
     width: 100vw;
     background-color: var(--cor2);
 }
+
+/* CSS · Referring to the Top */
 
 header {
     background-color: var(--cor2);
@@ -73,6 +77,8 @@ p#logobrig {
     color: var(--cor0);
     font-size: 0.3em;
 }
+
+/* CSS · Referring to the Menu  */
 
 i#iconmenu {
     color: var(--cor0);
@@ -115,12 +121,14 @@ main {
     margin: auto;
 }
 
+/* CSS · Referring to the banner */
+
 section#banner {
     padding-top: 20vh;
     padding-bottom: 20vh;
     line-height: 2em;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
-    background: url('../imagens/img04.jpeg') no-repeat top right;
+    background: url('../image/img04.jpeg') no-repeat top right;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -141,6 +149,8 @@ div#textbanner > p {
     text-align: left;   
 }
 
+/* CSS · Referring to the event  */
+
 section#event {
     background-color: var(--cor1);
 }
@@ -151,8 +161,7 @@ section#event > h2 {
     color: var(--cor0);
     text-align: center;
 }
-
-section#event > p {
+div#ptext > p {
     text-align: justify;
     padding: 0px 30px 30px 30px;
     font-family: var(--font-principal);
@@ -160,10 +169,11 @@ section#event > p {
 }
 
 div#imgevent {
-    background: url('../imagens/img05.jpeg') no-repeat left;
+    background: url('../image/img05.jpeg') no-repeat left;
     height: 50vh;
-    display: block;
 }
+
+/* CSS · Referring to the contact  */
 
 section#contact {
     background-color: var(--cor2);
@@ -192,19 +202,9 @@ a#whastapp:hover {
     color: var(--cor1);
 }
 
-div#form{
-    background-color: var(--cor0);
-    height: auto;
-    width: 70vw;
-    padding: 15px;
-    display: block;
-    text-align: right;
-    left: 0px;
-    position: relative;
-    border-radius: 0px 15x 15px 0px;
-}
+/* CSS · Referring to the location  */
 
-section#localtion {
+section#location {
     position: relative;
 }
 
@@ -215,16 +215,18 @@ section#location > h2 {
     padding: 30px 30px 30px 30px;
 }
 
-div#toprodape {
-    background-color:#391d1c;
-    height: 30px;
-    margin-top: -4px;
-}
+/* CSS · Referring to the footer  */
 
 footer {
     background-color: var(--cor0);
     height: 150px;
     width: 100vw;
+}
+
+div#toprodape {
+    background-color:#391d1c;
+    height: 30px;
+    margin-top: -4px;
 }
 
 footer p {
