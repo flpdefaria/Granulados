@@ -45,8 +45,9 @@ Fontes
 }
 
 body, html {
-    min-height: 100%;
-    background-color: var(--cor0);
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor2);
 }
 
 header {
@@ -159,8 +160,9 @@ section#event > p {
 }
 
 div#imgevent {
-    background: url('../imagens/img05.jpeg') left;
+    background: url('../imagens/img05.jpeg') no-repeat left;
     height: 50vh;
+    display: block;
 }
 
 section#contact {
@@ -222,18 +224,20 @@ div#toprodape {
 footer {
     background-color: var(--cor0);
     height: 150px;
+    width: 100vw;
 }
 
 footer p {
     font-family: var(--font-principal);
     font-size: 0.5em;
     text-align: center;
-    color: #391d1c;
+    color: var(--cor2);
+    padding-top: 5px;
 }
 
 p#logorodape {
     font-family: var(--fonte-granulados);
-    color: #391d1c;
+    color: var(--cor2);
     font-size: 1.5em;
-    padding-top: 20px;
+    padding-top: 70px;
 }
