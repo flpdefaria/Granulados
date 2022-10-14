@@ -84,6 +84,7 @@ Fontes
         list-style-type: none;
         border-top: none;
     }
+
     menu > ul > li > a {
         display: block;
         background-color: var(--cor2);
@@ -94,8 +95,30 @@ Fontes
         padding-top: 2px;
         margin-bottom: 15px;
     }
+
+    section#banner {
+        height: 300px;
+    }
+
+    div#textbanner {
+        position: relative;
+        margin-left: 30vh;
+        padding: 30px;
+    }
+
+    div#textbanner > p {
+        font-size: 2em;
+        line-height: 6vh;
+
+    }
+
     main {
         width: 100vw;
+    }
+    section#event > p {
+        width: auto;
+        text-align: center;
+        border: 1px solid black;
     }
 
 }
