@@ -54,6 +54,7 @@ body, html {
 
 /* CSS · Referring to the Top */
 
+/*
 header {
     background-color: var(--cor2);
     padding-bottom: 15px;
@@ -77,9 +78,107 @@ p#logobrig {
     color: var(--cor0);
     font-size: 0.3em;
 }
-
+*/
 /* CSS · Referring to the Menu  */
+a {
+    color: var(--cor1);
+    text-decoration: none;
+}
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor2);
+    height: 4.6875rem;
+    padding: 1rem;
+}
+
+.logo {
+    font-family: var(--fonte-granulados);
+    font-size: 2em;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.menu a:hover {
+    background: #fff8e8;
+}
+
+.btn-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background: var(--royal-blue-light);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+        background-color: var(--cor2);
+    }
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--cor1);
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+    .hamburger::after,
+    .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+
+/*
 i#iconmenu {
     color: var(--cor0);
     position: absolute;
@@ -120,7 +219,7 @@ menu > ul > li > a:hover {
 main {
     margin: auto;
 }
-
+*/
 /* CSS · Referring to the banner */
 
 section#banner {
@@ -141,12 +240,13 @@ div#textbanner {
     font-family: var(--font-principal);
     font-size: 1.5em;
     margin-left: 30px;
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);   
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367); 
+    border-radius: 10px 0px 10px 0px;  
 }
 
 div#textbanner > p {
     padding: 10px;
-    text-align: left;   
+    text-align: left;
 }
 
 /* CSS · Referring to the event  */
@@ -161,7 +261,7 @@ section#event > h2 {
     color: var(--cor0);
     text-align: center;
 }
-div#ptext > p {
+div#eventext > p {
     text-align: justify;
     padding: 0px 30px 30px 30px;
     font-family: var(--font-principal);

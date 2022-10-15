@@ -47,6 +47,8 @@ Font
         width: 100vw;
     }
 
+/* CSS · Referring to the top */
+
     header {
         width: 100vw;
         height: 150px;
@@ -67,6 +69,8 @@ Font
         font-size: 3em;
         margin-top: 3px;
     }
+
+/* CSS · Referring to the Menu */
 
     i#iconmenu {
         display: none;
@@ -99,55 +103,50 @@ Font
         margin-bottom: 15px;
     }
 
+/* CSS · Referring to the banner */
+
     section#banner {
         height: 300px;
     }
-
     div#textbanner {
         position: relative;
         margin-left: 30vh;
         padding: 30px;
+        border-radius: 15px 0px 15px 0px;
     }
 
     div#textbanner > p {
         font-size: 2em;
         line-height: 6vh;
     }
+
     main {
         width: 100vw;
     }
 
+/* CSS · Referring to the event */
+
     section#event {
-        border: 1px solid black;
-    }
-
-    section#event > h2 {
-        border: 1px solid black;
-    }
-
-    section#event > p {
-        width: auto;
-        text-align: center;
-        border: 1px solid black;
-    }
-
-    div.eventdiv {
-        display: inline-block;
-        width: 70vh;
-        margin: auto;
-    }    
-    
-    div#ptext > p {
-        border: 1px solid black;
-        text-align: justify;
-        padding: 0px 30px 30px 30px;
-        font-family: var(--font-principal);
-        color: var(--cor2);
+        width: 100vw;
+        height: 600px;
         margin: auto;
     }
+    section#event > div#eventext {
+        float: right;
+        width: 30%;
+        margin-right: 300px;
+        border: 1px solid black;
+    }
+    section#event > div#imgevent {
+        float: left;
+        width: 30%;
+        height: 50vh;
+        margin-left: 300px;
 
+    } 
     div#imgevent {
-        border: 1px solid black;
-        margin-left: 30vh;
+        border: 2px solid var(--cor0);
+        
     }
+
 }
