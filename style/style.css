@@ -97,6 +97,7 @@ header {
 .logo {
     font-family: var(--fonte-granulados);
     font-size: 2em;
+    color: var(--cor0);
 }
 
 .menu a {
