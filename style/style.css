@@ -166,7 +166,7 @@ header {
     transition: 0.3s;
   }
   .nav.active .menu {
-    height: calc(38vh - 4.6875rem);
+    height: calc(42vh - 4.6875rem);
     visibility: visible;
     overflow-y: auto;
     border-bottom: 30px solid var(--cor0);
