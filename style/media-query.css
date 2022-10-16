@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* 
-
-Typical Device Breakpoints
+/* Typical Device Breakpoints
 -------------------------------
 
 · Pequenas Telas: até 600px
@@ -41,7 +39,7 @@ Font
 
 /* Configuration for Tablet and Big Screens */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
 
 /* CSS · Referring to the Menu */
 
@@ -63,18 +61,18 @@ Font
 /* CSS · Referring to the banner */
 
     section#banner {
-        height: 300px;
-    }
-    div#textbanner {
-        position: relative;
-        margin-left: 30vh;
-        padding: 30px;
-        border-radius: 15px 0px 15px 0px;
+        height: 20rem;
     }
 
-    div#textbanner > p {
-        font-size: 2em;
-        line-height: 6vh;
+    p#textbanner {
+        display: flex;
+        background-color: var(--cor2);
+        color: var(--cor0);
+        font-family: var(--font-principal);
+        font-size: 3em;
+        padding: 0.5rem;
+        height: 2.5em;
+        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367); 
     }
 
     main {
