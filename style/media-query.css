@@ -32,20 +32,20 @@ Font
     --cor2: #e0d5bb;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
-    --font-principal: 'dystopian', sans-serif;
+    --fonte-briga: seravek-web, sans-serif;
+    --fonte-granulados: 'Caligna', cursive;
+    --font-principal: dystopian, sans-serif;
 }
+
+/* Configuration for Tablet */
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
 
     header {
         display: flex;
         align-items: center;
-        justify-content: centerce;
-        padding: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        justify-content: space-between;
+        padding: 1rem 3rem 1rem 3rem;
     }
 
     /* CSS · Referring to the Menu */
@@ -64,22 +64,23 @@ Font
         display: inline-block;
         color: var(--cor0);
     }
+    .menu a:hover {
+        background: none;
+        color: var(--cor1);
+        transition: 0.8s;
+    }
 }
 
-/* Configuration for Tablet and Big Screens */
+/* Configuration for Big Screens */
 
 @media screen and (min-width: 1200px) {
 
     header {
         display: flex;
         align-items: center;
-        justify-content: centerce;
-        padding: 1rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
+        justify-content: space-between;
+        padding: 1rem 10rem 1rem 10rem;
     }
-
-    
 
 /* CSS · Referring to the Menu */
 
@@ -96,6 +97,11 @@ Font
     nav > ul > li {
         display: inline-block;
         color: var(--cor0);
+    }
+    .menu a:hover {
+        background: none;
+        color: var(--cor1);
+        transition: 0.8s;
     }
 
 /* CSS · Referring to the banner */
@@ -115,33 +121,41 @@ Font
         box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367); 
     }
 
-    main {
-        width: 100vw;
+/* CSS · Referring to the Artisanal */
+
+    section#artisanal > p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 10rem 3rem 10rem;
     }
+
 
 /* CSS · Referring to the event */
 
-    section#event {
-        width: 100vw;
-        height: 600px;
-        margin: auto;
-    }
-    section#event > div#eventext {
-        float: right;
-        width: 30%;
-        margin-right: 300px;
-        border: 1px solid black;
-    }
-    section#event > div#imgevent {
-        float: left;
-        width: 30%;
-        height: 50vh;
-        margin-left: 300px;
-
-    } 
-    div#imgevent {
-        border: 2px solid var(--cor0);
-        
+    section#event > p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 10rem 3rem 10rem;
     }
 
+/* CSS · Referring to the contact */
+
+    section#contact > h2 {
+        padding: 3rem 10rem 3rem 10rem;
+    }
+
+    section#contact > p {
+        justify-content: left;
+        padding-left: 10rem;
+        color: var(--cor0);
+        font-family: var(--fonte-padrao);
+    }
+
+/* CSS · Referring to the Location */
+
+    section#location > h2 {
+        padding: 3rem 10rem 3rem 10rem;
+    }
 }
