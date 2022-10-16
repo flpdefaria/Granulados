@@ -37,9 +37,49 @@ Font
     --font-principal: 'dystopian', sans-serif;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: centerce;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* CSS · Referring to the Menu */
+
+    nav#iconmenu {
+        display: none;
+    }
+
+    nav {
+        font-family: var(--font-principal);
+        display: block;
+        text-align: center;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        color: var(--cor0);
+    }
+}
+
 /* Configuration for Tablet and Big Screens */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: centerce;
+        padding: 1rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    
 
 /* CSS · Referring to the Menu */
 

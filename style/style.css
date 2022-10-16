@@ -73,6 +73,8 @@ header {
     background: var(--cor2);
     height: 4.6875rem;
     padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .logo {
@@ -96,7 +98,7 @@ header {
     display: none;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
     .menu {
         display: block;
