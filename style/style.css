@@ -52,34 +52,8 @@ body, html {
     background-color: var(--cor2);
 }
 
-/* CSS · Referring to the Top */
-
-/*
-header {
-    background-color: var(--cor2);
-    padding-bottom: 15px;
-}
-
-div#topologo {
-    display: inline-block;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-p#logogran {
-    font-family: var(--fonte-granulados);
-    color: var(--cor0);
-    font-size: 2em;
-}
-
-p#logobrig {
-    font-family: var(--fonte-briga);
-    color: var(--cor0);
-    font-size: 0.3em;
-}
-*/
 /* CSS · Referring to the Menu  */
+
 a {
     color: var(--cor0);
     text-decoration: none;
@@ -115,7 +89,7 @@ header {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     .menu {
         display: block;
@@ -150,10 +124,12 @@ header {
         padding: 1rem 0;
         cursor: pointer;
     }
+
     .hamburger {
         border-top: 0.125rem solid;
         width: 1.25rem;
     }
+
     .hamburger::after,
     .hamburger::before {
     content: " ";
@@ -165,66 +141,28 @@ header {
     position: relative;
     transition: 0.3s;
   }
+
   .nav.active .menu {
     height: calc(42vh - 4.6875rem);
     visibility: visible;
     overflow-y: auto;
     border-bottom: 30px solid var(--cor0);
   }
+
   .nav.active .hamburger {
     border-top-color: transparent;
   }
+
   .nav.active .hamburger::before {
     transform: rotate(135deg);
   }
+  
   .nav.active .hamburger::after {
     transform: rotate(-135deg);
     top: -0.4375rem;
   }
 }
 
-/*
-i#iconmenu {
-    color: var(--cor0);
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    display: block;
-    cursor: pointer;
-}
-
-i#iconmenu:hover {
-    color: var(--cor1);
-}
-
-menu {
-    display: none;
-}
-
-menu > ul {
-    list-style-type: none;
-    border-top: 1px solid var(--cor0);
-    margin-top: 16px;
-}
-
-menu > ul > li > a {
-    display: block;
-    background-color: var(--cor2);
-    color: var(--cor0);
-    text-decoration: none;
-    font-family: var(--font-principal);
-    font-size: 0.8em;
-    padding: 20px 30px 8px;
-}
-
-menu > ul > li > a:hover {
-    color: var(--cor1);
-}
-
-main {
-    margin: auto;
-}
-*/
 /* CSS · Referring to the banner */
 
 section#banner {
