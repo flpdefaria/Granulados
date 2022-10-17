@@ -238,27 +238,28 @@ div#imgevent {
 
 /* CSS · Referring to the contact  */
 
+section#contact {
+    text-align: center;
+}
+
 section#contact > p {
-    justify-content: left;
-    padding-left: 2rem;
     color: var(--cor0);
     font-family: var(--fonte-padrao);
-}
-
-section#contact {
-    background-color: var(--cor2);
-}
-
-section#contact > h2 {
-    text-align: left;
+    padding: 0 0 2rem 0;
 }
 
 a#whastapp {
-    color: var(--cor0);
+    color: var(--cor2);
+    background: var(--cor0);
+    padding: 10px 100px 10px 100px;
+    border-radius: 20px;
+    
 }
 
 a#whastapp:hover {
-    color: var(--cor1);
+    color: var(--cor0);
+    background: var(--cor1);
+    transition: 0.5s;
 }
 
 /* CSS · Referring to the location  */

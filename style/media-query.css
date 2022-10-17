@@ -193,12 +193,11 @@ Font
 /* CSS · Referring to the contact */
 
     section#contact > h2 {
-        padding: 3rem 10rem 3rem 10rem;
+        text-align: center;
     }
 
     section#contact > p {
-        justify-content: left;
-        padding-left: 10rem;
+        justify-content: center;
         color: var(--cor0);
         font-family: var(--fonte-padrao);
     }
