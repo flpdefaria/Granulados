@@ -210,7 +210,7 @@ p#textbanner {
 /* CSS · Referring to the artisanal  */
 
 div#imgartisanal {
-    background: url('../image/img06.jpeg') no-repeat left;
+    background: url('../image/imgconf.png') no-repeat;
     height: 50vh;
     background-size: cover;
     
@@ -229,7 +229,6 @@ div#imgevent {
 }
 
 /* CSS · Referring to the contact  */
-
 
 section#contact > p {
     justify-content: left;
