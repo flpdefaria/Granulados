@@ -191,7 +191,7 @@ section#banner {
     display: flex;
     justify-content: space-between;
     padding: 10rem;
-    background: url('../image/img04.jpeg') no-repeat top right;
+    background: url('../image/banner01.png') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
@@ -231,7 +231,7 @@ section#event {
 }
 
 div#imgevent {
-    background: url('../image/img05.jpeg') no-repeat left;
+    background: url('../image/eventbanner.png') no-repeat center;
     height: 50vh;
     background-size: cover;
 }
@@ -253,12 +253,15 @@ a#whastapp {
     background: var(--cor0);
     padding: 10px 100px 10px 100px;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
     
 }
 
 a#whastapp:hover {
     color: var(--cor0);
     background: var(--cor1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.148);
     transition: 0.5s;
 }
 

@@ -190,6 +190,12 @@ Font
         padding: 1rem 10rem 3rem 10rem;
     }
 
+    div#imgevent {
+        background: url('../image/eventbanner.png') no-repeat center bottom;
+        height: 70vh;
+        background-size: cover;
+    }
+
 /* CSS · Referring to the contact */
 
     section#contact > h2 {
