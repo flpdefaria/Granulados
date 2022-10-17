@@ -65,7 +65,7 @@ p.text {
     font-family: var(--fonte-padrao);
     color: var(--cor0);
     text-align: justify;
-    padding: 5px 50px 50px 50px;
+    padding: 2rem;
 }
 
 h2 {
@@ -221,6 +221,14 @@ div#imgevent {
 }
 
 /* CSS · Referring to the contact  */
+
+
+section#contact > p {
+    justify-content: left;
+    padding-left: 2rem;
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
 
 section#contact {
     background-color: var(--cor2);
