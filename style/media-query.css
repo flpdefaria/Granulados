@@ -108,6 +108,8 @@ Font
 
     section#banner {
         height: 20rem;
+        transition: width 0.3s, heigth 0.3s;
+        transition-timing-function: ease;
     }
 
     p#textbanner {
@@ -157,5 +159,14 @@ Font
 
     section#location > h2 {
         padding: 3rem 10rem 3rem 10rem;
+    }
+
+    iframe {
+        width: 82%;
+        padding-bottom: 5rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

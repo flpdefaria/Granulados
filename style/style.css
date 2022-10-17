@@ -67,7 +67,7 @@ header {
     padding: 1rem;
 }
 
-p.text {
+p.textsection {
     font-family: var(--fonte-padrao);
     color: var(--cor0);
     text-align: justify;
@@ -204,7 +204,7 @@ p#textbanner {
     font-family: var(--font-principal);
     font-size: 2em;
     padding: 0.5rem;
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367); 
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.367);
 }
 
 /* CSS · Referring to the artisanal  */
@@ -213,6 +213,7 @@ div#imgartisanal {
     background: url('../image/img06.jpeg') no-repeat left;
     height: 50vh;
     background-size: cover;
+    
 }
 
 /* CSS · Referring to the event  */
