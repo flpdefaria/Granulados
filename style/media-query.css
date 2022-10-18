@@ -214,12 +214,13 @@ Font
         padding: 3rem 10rem 3rem 10rem;
     }
 
-    iframe {
+    section#location > iframe {
         width: 82%;
+        border: 1px solid black;
         padding-bottom: 5rem;
         margin: auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;        
     }
 }
