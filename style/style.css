@@ -27,6 +27,7 @@ Font
 
 */
 
+@import url('../fontawesome-free-6.2.0-web/css/all.min.css');
 
 @font-face {
     font-family: 'Caligna';
@@ -284,18 +285,30 @@ section#location > h2 {
 /* CSS · Referring to the footer  */
 
 footer {
-    display: block; 
     align-items: center;
     justify-content: center;
     background-color: var(--cor0);
-    border-top: 30px solid #391d1c;;
 }
+
+footer > section#redes-sociais {
+    text-align: center;
+    background-color: #391d1c;
+}
+
+footer > section#redes-sociais > p#reds {
+    font-family: var(--fonte-briga);
+    color: var(--cor2);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
 footer > p#logorodape {
     font-family: var(--fonte-granulados);
     color: var(--cor2);
     font-size: 1.5em;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 footer > p#brigadeiros {
@@ -314,5 +327,14 @@ footer p#footerp {
     color: var(--cor2);
     font-size: 0.5em;
     padding-bottom: 1rem;
-    
+}
+
+.fa-brands {
+    color: var(--cor2);
+    padding: 1rem 0.8rem 1.5rem 0.8rem;
+}
+
+.fa-brands:hover {
+    color: var(--cor1);
+    transition: 0.5s;
 }
