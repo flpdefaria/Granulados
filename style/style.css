@@ -301,7 +301,7 @@ footer > p#logorodape {
 footer > p#brigadeiros {
     font-family: var(--fonte-briga);
     color: var(--cor2);
-    font-size: 5px;
+    font-size: 0.3rem;
     text-align: center;
     font-weight: 900;
     letter-spacing: 0.07rem;
