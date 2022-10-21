@@ -198,7 +198,7 @@ section#banner {
     display: flex;
     justify-content: space-between;
     padding: 10rem;
-    background: url('../image/banner01.png') no-repeat;
+    background: url('../image/bannercelular.png') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.267);
@@ -293,14 +293,6 @@ footer {
 
 footer > section#redes-sociais {
     text-align: center;
-}
-
-footer > section#redes-sociais > p#reds {
-    font-family: var(--fonte-briga);
-    color: var(--cor2);
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 1rem;
 }
 
 footer > p#logorodape {
