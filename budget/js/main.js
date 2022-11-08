@@ -4,6 +4,7 @@ var list = [
     {"desc":"meat","amount":"1","value":"15.00"}
 ];
 
+// Function to Soma Total
 function getTotal(list){
     var total = 0;
     for(var key in list){
@@ -12,6 +13,7 @@ function getTotal(list){
     document.getElementById("totalValue").innerHTML = formatValue(total);
 }
 
+// Function to estruturar the list 
 function setList(list){
     var table = '<thead><tr><td>Description</td><td>Amount</td><td>Value</td><td>Action</td></tr></thead><tbody>';
     for(var key in list){
@@ -29,17 +31,20 @@ function formatDesc(desc){
     return str;
 }
 
-function  formatAmount(amount){
+// Function convert to string a int
+function formatAmount(amount){
     return parseInt(amount);
 }
 
-function  formatValue(value){
+// Function p/ tratar os valores com (. e ,) e mostrar 2 casas depois da virgula
+function formatValue(value){
     var str = parseFloat(value).toFixed(2) + "";
     str = str.replace(".",",");
     str = "$ " + str;
     return str;
 }
 
+// Function p/ validar os input
 function addData(){
     if(!validation()){
         return;
@@ -88,6 +93,7 @@ function updateData(){
     setList(list);
 }
 
+// Function to delete is Itens
 function deleteData(id){
     if(confirm("Delete this item?")){
         if(id === list.length - 1){
