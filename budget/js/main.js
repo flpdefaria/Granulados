@@ -13,7 +13,7 @@ function getTotal(list){
     document.getElementById("totalValue").innerHTML = formatValue(total);
 }
 
-// Function to estruturar the list 
+// Function to estruturar the list
 function setList(list){
     var table = '<thead><tr><td>Description</td><td>Amount</td><td>Value</td><td>Action</td></tr></thead><tbody>';
     for(var key in list){
